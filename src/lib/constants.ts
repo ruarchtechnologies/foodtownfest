@@ -36,7 +36,7 @@ export const NAV_LINKS = [
 
 /* ─── Social ───────────────────────────────────────────────────────────────── */
 export const SOCIAL_LINKS = [
-  { platform: "Instagram", href: "#", handle: "@foodtownfest" },
+  { platform: "Instagram", href: "https://www.instagram.com/foodtownfest/", handle: "@foodtownfest" },
   { platform: "Twitter", href: "#", handle: "@foodtownfest" },
   { platform: "TikTok", href: "#", handle: "@foodtownfest" },
   { platform: "YouTube", href: "#", handle: "FoodTownFest TV" },
