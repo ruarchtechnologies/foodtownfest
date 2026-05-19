@@ -1,0 +1,68 @@
+import type { Vendor } from "@/types/festival";
+
+export const vendors: Vendor[] = [
+  {
+    id:        "v-001",
+    name:      "Mama's Kitchen",
+    specialty: "Authentic Nigerian stews & soups",
+    location:  "Vendor Row A · Stall 1",
+    image:     "/images/vendors/mamas-kitchen.jpg",
+    rating:    4.9,
+  },
+  {
+    id:        "v-002",
+    name:      "Suya Spot",
+    specialty: "Northern suya & tsire",
+    location:  "Vendor Row A · Stall 4",
+    image:     "/images/vendors/suya-spot.jpg",
+    rating:    4.8,
+  },
+  {
+    id:        "v-003",
+    name:      "Jollof Wars",
+    specialty: "Regional jollof rice showdown",
+    location:  "Vendor Row B · Stall 2",
+    image:     "/images/vendors/jollof-wars.jpg",
+    rating:    4.7,
+  },
+  {
+    id:        "v-004",
+    name:      "The Buka",
+    specialty: "Classic buka: amala, ewedu, gbegiri",
+    location:  "Vendor Row B · Stall 5",
+    image:     "/images/vendors/buka.jpg",
+    rating:    4.8,
+  },
+  {
+    id:        "v-005",
+    name:      "Pepper Dem",
+    specialty: "Spicy pepper soup & isi ewu",
+    location:  "Vendor Row C · Stall 1",
+    image:     "/images/vendors/pepper-dem.jpg",
+    rating:    4.6,
+  },
+  {
+    id:        "v-006",
+    name:      "Fresh Squeeze",
+    specialty: "Cold-pressed juices & zobo",
+    location:  "Vendor Row C · Stall 3",
+    image:     "/images/vendors/fresh-squeeze.jpg",
+    rating:    4.7,
+  },
+  {
+    id:        "v-007",
+    name:      "Akara Corner",
+    specialty: "Street snacks: akara, puff puff, boli",
+    location:  "Vendor Row D · Stall 2",
+    image:     "/images/vendors/akara-corner.jpg",
+    rating:    4.5,
+  },
+  {
+    id:        "v-008",
+    name:      "Asun & Co.",
+    specialty: "Peppered goat meat & point-and-kill",
+    location:  "Vendor Row D · Stall 6",
+    image:     "/images/vendors/asun.jpg",
+    rating:    4.9,
+  },
+];

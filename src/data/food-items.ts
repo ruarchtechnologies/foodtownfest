@@ -1,0 +1,68 @@
+import type { FoodItem } from "@/types/festival";
+
+export const foodItems: FoodItem[] = [
+  {
+    id:          "f-001",
+    name:        "Festival Jollof",
+    region:      "Lagos",
+    description: "Smoky party jollof rice slow-cooked over firewood, served with grilled chicken and fried plantains.",
+    image:       "/images/food/jollof.jpg",
+    spiceLevel:  2,
+  },
+  {
+    id:          "f-002",
+    name:        "Northern Suya Platter",
+    region:      "Kano",
+    description: "Marinated beef skewers coated in spiced groundnut powder, grilled over open flame.",
+    image:       "/images/food/suya.jpg",
+    spiceLevel:  3,
+  },
+  {
+    id:          "f-003",
+    name:        "Egusi & Amala",
+    region:      "Ibadan",
+    description: "Rich melon-seed soup with assorted meat and stockfish, paired with fresh amala.",
+    image:       "/images/food/egusi-amala.jpg",
+    spiceLevel:  2,
+  },
+  {
+    id:          "f-004",
+    name:        "Pepper Soup",
+    region:      "Delta",
+    description: "Fragrant catfish pepper soup, bold, aromatic and warming, served with ede cocoyam.",
+    image:       "/images/food/pepper-soup.jpg",
+    spiceLevel:  3,
+  },
+  {
+    id:          "f-005",
+    name:        "Pounded Yam & Ofe Onugbu",
+    region:      "Enugu",
+    description: "Silky hand-pounded yam with bitter-leaf soup enriched with palm fruit and assorted meats.",
+    image:       "/images/food/pounded-yam.jpg",
+    spiceLevel:  1,
+  },
+  {
+    id:          "f-006",
+    name:        "Akara & Ogi",
+    region:      "Yoruba",
+    description: "Fluffy bean cakes fried golden-brown, served with smooth warm corn porridge.",
+    image:       "/images/food/akara.jpg",
+    spiceLevel:  1,
+  },
+  {
+    id:          "f-007",
+    name:        "Nkwobi",
+    region:      "Anambra",
+    description: "Spiced cow-foot in palm kernel sauce. A beloved Southeast delicacy.",
+    image:       "/images/food/nkwobi.jpg",
+    spiceLevel:  2,
+  },
+  {
+    id:          "f-008",
+    name:        "Asun",
+    region:      "Ondo",
+    description: "Peppered smoked goat meat, charred at the edges, swimming in scotch bonnet heat.",
+    image:       "/images/food/asun.jpg",
+    spiceLevel:  3,
+  },
+];
