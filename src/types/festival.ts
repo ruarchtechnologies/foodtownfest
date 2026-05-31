@@ -19,11 +19,13 @@ export interface Vendor {
 }
 
 export interface ScheduleItem {
-  id:    string;
-  time:  string;
-  title: string;
-  stage: string;
-  type:  "food" | "music" | "culture";
+  id:          string;
+  time:        string;
+  title:       string;
+  stage:       string;
+  type:        "food" | "music" | "culture";
+  description: string;
+  image:       string;
 }
 
 export interface ScheduleDay {

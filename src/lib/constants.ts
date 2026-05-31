@@ -26,21 +26,23 @@ export const BRAND_COLORS = {
 
 /* ─── Navigation ───────────────────────────────────────────────────────────── */
 export const NAV_LINKS = [
+  { label: "Roadmap", href: "#roadmap" },
   { label: "About", href: "#about" },
-  { label: "Food", href: "#food" },
-  { label: "Lineup", href: "#performers" },
-  { label: "Schedule", href: "#schedule" },
-  { label: "Vendors", href: "#vendors" },
+  { label: "Brands", href: "#brands" },
   { label: "Gallery", href: "#gallery" },
+  { label: "FAQ", href: "#faq" },
 ] as const;
 
 /* ─── Social ───────────────────────────────────────────────────────────────── */
 export const SOCIAL_LINKS = [
-  { platform: "Instagram", href: "https://www.instagram.com/foodtownfest/", handle: "@foodtownfest" },
-  { platform: "Twitter", href: "#", handle: "@foodtownfest" },
-  { platform: "TikTok", href: "#", handle: "@foodtownfest" },
-  { platform: "YouTube", href: "#", handle: "FoodTownFest TV" },
+  { platform: "Instagram", href: "https://www.instagram.com/foodtownfest?igsh=Z2wwbWQyNjBoMjF6", handle: "@foodtownfest" },
+  { platform: "TikTok",    href: "https://www.tiktok.com/@foodtownfest?_r=1&_t=ZS-96Ao2m0DkDH",  handle: "@foodtownfest" },
+  { platform: "X",         href: "https://x.com/foodtownfest?s=21",                               handle: "@foodtownfest" },
 ] as const;
+
+/* ─── External URLs ─────────────────────────────────────────────────────────── */
+export const TICKETS_URL   = "https://tix.africa/discover/raveatfoodtownfest" as const;
+export const VENDORS_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSctQuIbs8K8hLecVCwtSz_0wOqB_DW25OwrOqwggFUZBhqyeA/viewform" as const;
 
 /* ─── Marquee ──────────────────────────────────────────────────────────────── */
 export const HERO_MARQUEE_TEXT =

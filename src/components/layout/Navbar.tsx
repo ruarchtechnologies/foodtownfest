@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
 import { cn } from "@/lib/utils";
-import { FESTIVAL_NAME, NAV_LINKS } from "@/lib/constants";
+import { FESTIVAL_NAME, NAV_LINKS, TICKETS_URL, VENDORS_FORM_URL } from "@/lib/constants";
 import { Button } from "@/components/ui/Button";
 import { fadeInDown, staggerContainer, fadeUp } from "@/lib/animations";
 
@@ -58,9 +58,14 @@ export function Navbar() {
             ))}
           </ul>
 
-          {/* CTA */}
-          <div className="hidden md:block">
-            <Button size="sm">GET TICKETS</Button>
+          {/* CTAs */}
+          <div className="hidden md:flex items-center gap-2">
+            <a href={TICKETS_URL} target="_blank" rel="noopener noreferrer">
+              <Button size="sm">GET TICKETS</Button>
+            </a>
+            <a href={VENDORS_FORM_URL} target="_blank" rel="noopener noreferrer">
+              <Button size="sm" variant="ghost">VENDORS</Button>
+            </a>
           </div>
 
           {/* Hamburger */}
@@ -122,10 +127,13 @@ export function Navbar() {
                   {label}
                 </motion.a>
               ))}
-              <motion.div variants={fadeUp} className="mt-4">
-                <Button size="lg" onClick={() => setOpen(false)}>
-                  GET TICKETS
-                </Button>
+              <motion.div variants={fadeUp} className="mt-4 flex flex-col items-center gap-3">
+                <a href={TICKETS_URL} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
+                  <Button size="lg">GET TICKETS</Button>
+                </a>
+                <a href={VENDORS_FORM_URL} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
+                  <Button size="lg" variant="ghost">VENDORS</Button>
+                </a>
               </motion.div>
             </motion.nav>
           </motion.div>

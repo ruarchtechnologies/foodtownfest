@@ -1,12 +1,14 @@
-import { Navbar }       from "@/components/layout/Navbar";
-import { Hero }         from "@/components/sections/Hero";
-import { About }        from "@/components/sections/About";
-import { FoodShowcase } from "@/components/sections/FoodShowcase";
-import { Performers }   from "@/components/sections/Performers";
-import { Schedule }     from "@/components/sections/Schedule";
-import { Vendors }      from "@/components/sections/Vendors";
-import { Gallery }      from "@/components/sections/Gallery";
-import { Footer }       from "@/components/sections/Footer";
+import { Navbar } from "@/components/layout/Navbar";
+import { Hero } from "@/components/sections/Hero";
+import AdventureRoadmap from "@/components/sections/AdventureRoadmap";
+import { About } from "@/components/sections/About";
+import { Schedule } from "@/components/sections/Schedule";
+import { Tickets } from "@/components/sections/Tickets";
+import { Brands } from "@/components/sections/Brands";
+import { Gallery } from "@/components/sections/Gallery";
+import { Testimonials } from "@/components/sections/Testimonials";
+import { FAQ } from "@/components/sections/FAQ";
+import { Footer } from "@/components/sections/Footer";
 
 export default function Home() {
   return (
@@ -14,12 +16,13 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <AdventureRoadmap />
         <About />
-        <FoodShowcase />
-        <Performers />
-        <Schedule />
-        <Vendors />
+        {/* <Schedule /> */}
+        <Brands />
         <Gallery />
+        <Testimonials />
+        <FAQ />
       </main>
       <Footer />
     </>

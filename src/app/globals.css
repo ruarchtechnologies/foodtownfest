@@ -14,6 +14,9 @@
   /* Typography */
   --font-syne: var(--font-syne-var), ui-sans-serif, sans-serif;
   --font-dm: var(--font-dm-sans-var), ui-sans-serif, sans-serif;
+  --font-danfo: var(--font-danfo-var), cursive;
+  --font-ga-maamli: var(--font-ga-maamli-var), cursive;
+  --font-kablammo: var(--font-kablammo-var), cursive;
 
   /* Border radius */
   --radius-card: 1rem;
