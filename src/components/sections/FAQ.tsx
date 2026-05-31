@@ -13,7 +13,7 @@ const FAQS = [
   },
   {
     q: "How do I get tickets?",
-    a: "Hit the GET TICKETS button on the homepage or scroll up to register. Early bird pricing is available for a limited time — indon't sleep on it.",
+    a: "Hit the GET TICKETS button on the homepage or scroll up to register. Early bird pricing is available for a limited time, don't sleep on it.",
   },
   {
     q: "What kind of food will be available?",
@@ -25,11 +25,11 @@ const FAQS = [
   },
   {
     q: "Is FoodTownFest family-friendly?",
-    a: "Absolutely. FoodTownFest is open to all ages. Come with your family, your squad, your partner — everyone is welcome at the table.",
+    a: "Absolutely. FoodTownFest is open to all ages. Come with your family, your squad, your partner. Everyone is welcome at the table.",
   },
   {
     q: "Will there be live music and performances?",
-    a: "Yes. The evening closes with live Afrobeats and highlife performances on the main stage. Eat, dance, and vibe — all in one place.",
+    a: "Yes. The evening closes with live Afrobeats and highlife performances on the main stage. Eat, dance, and vibe. All in one place.",
   },
   {
     q: "When will Events 2 and 3 be announced?",

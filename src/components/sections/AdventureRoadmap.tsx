@@ -219,13 +219,15 @@ function RoadStrip() {
     const DURATION = 7000;
 
     function loop(ts: number) {
+      const b = busRef.current;
+      if (!b) return;
       if (!startTime) startTime = ts;
       const progress = ((ts - startTime) % DURATION) / DURATION;
-      const parent = bus.parentElement;
+      const parent = b.parentElement;
       if (parent) {
-        const totalW = parent.offsetWidth + bus.offsetWidth;
-        const x = -bus.offsetWidth + totalW * progress;
-        bus.style.transform = `translateX(${x}px)`;
+        const totalW = parent.offsetWidth + b.offsetWidth;
+        const x = -b.offsetWidth + totalW * progress;
+        b.style.transform = `translateX(${x}px)`;
       }
       raf = requestAnimationFrame(loop);
     }

@@ -35,8 +35,8 @@ export function About() {
               className="relative aspect-[4/3] w-full overflow-hidden rounded-card border border-white/5 bg-surface"
             >
               <Image
-                src={IMAGES[0].src}
-                alt={IMAGES[0].alt}
+                src={IMAGES[0]!.src}
+                alt={IMAGES[0]!.alt}
                 fill
                 unoptimized
                 className="object-cover transition-transform duration-700 hover:scale-105"
