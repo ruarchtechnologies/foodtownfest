@@ -40,22 +40,33 @@ function GalleryCard({
   item: GalleryItem;
   onOpen: (item: GalleryItem) => void;
 }) {
+  const [errored, setErrored] = useState(false);
+
   return (
     <motion.button
       variants={scaleIn}
       whileHover={{ scale: 1.02, y: -4 }}
       transition={{ type: "spring", stiffness: 350, damping: 25 }}
-      className={`relative w-full cursor-pointer overflow-hidden rounded-card group ${item.spanClass}`}
+      className={`relative w-full cursor-pointer overflow-hidden rounded-card group ${item.spanClass} bg-surface`}
       style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }}
       aria-label={`View: ${item.label}`}
     >
-      {/* Background Image */}
-      <img
-        src={item.image}
-        alt={item.label}
-        className="absolute inset-0 h-full w-full object-cover transition-transform duration-750 ease-out group-hover:scale-108"
-        loading="lazy"
-      />
+      {/* Dark shimmer shown while loading or on error */}
+      {errored ? (
+        <div className="absolute inset-0 flex items-center justify-center">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="1.5">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+          </svg>
+        </div>
+      ) : (
+        <img
+          src={item.image}
+          alt={item.label}
+          onError={() => setErrored(true)}
+          className="absolute inset-0 h-full w-full object-cover transition-transform duration-750 ease-out group-hover:scale-108"
+          loading="lazy"
+        />
+      )}
 
       {/* Modern Overlay with blur on text */}
       <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent opacity-60 group-hover:opacity-75 transition-opacity duration-300" />
