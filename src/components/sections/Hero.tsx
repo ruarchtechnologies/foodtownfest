@@ -125,7 +125,7 @@ export function Hero() {
       {/* ── Main content ── */}
       <motion.div
         style={{ y: heroY }}
-        className="relative z-10 flex flex-1 flex-col items-center justify-center px-8 pb-6 pt-36 md:px-6 md:pt-60 text-center"
+        className="relative z-10 flex flex-1 flex-col items-center justify-center px-8 pb-6 pt-52 md:px-6 md:pt-60 text-center"
       >
         <motion.div
           variants={staggerContainer}

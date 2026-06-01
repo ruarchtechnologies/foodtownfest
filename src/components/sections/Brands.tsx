@@ -19,7 +19,10 @@ const BRANDS: BrandConfig[] = [
   { name: "Maltina",            src: "/image/maltina.png",            className: "h-16 md:h-20" },
   { name: "Golden Penny",       src: "/image/golden penny.png"       },
   { name: "Cold Stone",         src: "/image/coldstone-removebg.png" },
+  { name: "Peak Milk",          src: "/image/peak_milk.png"          },
 ];
+
+const REPEATED_BRANDS = [...BRANDS, ...BRANDS, ...BRANDS];
 
 
 export function Brands() {
@@ -45,11 +48,11 @@ export function Brands() {
         >
           {/* Single Marquee */}
           <div className="relative py-6">
-            <Marquee speed="slow" className="flex items-center">
-              <div className="flex gap-16 md:gap-24 px-8 items-center">
-                {BRANDS.map((brand) => (
+            <Marquee speed="slow" duration="35s" className="flex items-center">
+              <div className="flex gap-12 md:gap-24 px-6 md:px-12 items-center">
+                {REPEATED_BRANDS.map((brand, i) => (
                   <img
-                    key={brand.name}
+                    key={`${brand.name}-${i}`}
                     src={brand.src}
                     alt={brand.name}
                     title={brand.name}

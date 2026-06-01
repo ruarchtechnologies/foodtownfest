@@ -79,8 +79,7 @@ export function About() {
               variants={fadeUp}
               className="font-dm text-base leading-relaxed text-muted"
             >
-              FoodTownFest is Nigeria's most celebrated food and culture festival. Three events,
-              three cities, one movement. The country's best chefs, vendors, musicians, and
+              FoodTownFest is Nigeria's most celebrated food and culture festival. The country's best chefs, vendors, musicians, and
               communities come together across Nigeria to honour the rich, unapologetic depth of
               Nigerian cuisine.
             </motion.p>

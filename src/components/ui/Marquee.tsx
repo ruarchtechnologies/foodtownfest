@@ -5,6 +5,7 @@ interface MarqueeProps {
   className?: string;
   speed?:     "slow" | "normal" | "fast";
   reverse?:   boolean;
+  duration?:  string;
 }
 
 const speedStyles: Record<NonNullable<MarqueeProps["speed"]>, React.CSSProperties> = {
@@ -18,6 +19,7 @@ export function Marquee({
   className,
   speed    = "normal",
   reverse  = false,
+  duration,
 }: MarqueeProps) {
   return (
     <div className={cn("overflow-hidden whitespace-nowrap", className)}>
@@ -25,6 +27,7 @@ export function Marquee({
         className="inline-flex animate-marquee"
         style={{
           ...speedStyles[speed],
+          ...(duration && { animationDuration: duration }),
           animationDirection: reverse ? "reverse" : "normal",
         }}
       >
